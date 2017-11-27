@@ -3,7 +3,7 @@ var request = new XMLHttpRequest();
 request.open("GET", url, true);
 request.onreadystatechange = function() {
 if (request.readyState == 4) {
-if (request.status == 200 || request.status == 304) {13 | JSON Formatter Reference
+if (request.status == 200 || request.status == 304) {
 var response = eval(request.responseText); // convert the response
 text to javascript objects
 // do something with response
